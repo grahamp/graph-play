@@ -1,7 +1,6 @@
 import React from 'react';
 
 require('./App.css');
-
 import Graph from './graph';
 
 //export default () => (<Graph graph={data}/>, document.body);
@@ -31,7 +30,17 @@ export default class App extends React.Component {
 };
   render() {
     return (
+      <div>
+      <h1 onClick={this.handleClick}> Export </h1>
       <Graph graph={this.data}/>
+      </div>
     );
+  }
+   handleClick() {
+    // This probably where you would have an `ajax` call
+    setTimeout(() => {
+      // Completed of async action, set loading state back
+      this.setState({isLoading: false});
+    }, 2000);
   }
 }
