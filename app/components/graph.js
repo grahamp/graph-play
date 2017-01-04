@@ -31,6 +31,7 @@ class Graph extends Component {
     let options = {
       stabilize: false,
       smoothCurves: false,
+      manipulation:{enabled:true},
       edges: {
         color: '#000000',
         width: 0.5,
@@ -60,6 +61,10 @@ class Graph extends Component {
     const {style} = this.props;
     return React.createElement('div', {onDoubleClick: this.changeMode.bind(this), id: identifier, style}, identifier);
   }
+
+
+        
+
 }
 
 Graph.defaultProps = {

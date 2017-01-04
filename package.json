@@ -1,7 +1,7 @@
 {
   "name": "react-babel-webpack-boilerplate",
   "version": "1.2.5",
-  "description": "",
+  "description": "This repo is a boilerplate for React-Babel-Webpack project. You could use it as a base to build your own web app.",
   "main": "app/main.jsx",
   "scripts": {
     "lint": "eslint 'app/**/*.@(js|jsx)'",
@@ -16,11 +16,14 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1"
   },
   "dependencies": {
+    "@types/react": "^0.14.55",
+    "@types/react-dom": "^0.14.20",
     "babel-runtime": "6.x",
-    "react": "15.x",
-    "react-dom": "15.x"
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
   },
   "devDependencies": {
+    "awesome-typescript-loader": "^3.0.0-beta.17",
     "babel-core": "6.x",
     "babel-eslint": "6.x",
     "babel-loader": "6.x",
@@ -40,7 +43,9 @@
     "eslint-plugin-react": "latest",
     "ghooks": "^1.0.3",
     "open-browser-webpack-plugin": "0.0.2",
+    "source-map-loader": "^0.1.5",
     "style-loader": "~0.13.0",
+    "typescript": "^2.1.4",
     "validate-commit-msg": "2.x",
     "webpack": "latest",
     "webpack-dev-server": "latest"
